@@ -1,0 +1,13 @@
+#main-menu{
+	
+	left:unset;
+	right: 0;
+}
+
+#ordenar-genero{
+	cursor:pointer;
+}
+
+#form-container{
+	width:40vw;
+}

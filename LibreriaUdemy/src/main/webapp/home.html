@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+	integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+	crossorigin="anonymous" />
+
+<script src="js/main.js"></script>
+<link rel="stylesheet" href="css/main.css" />
+<title>Inicio - Udemy</title>
+</head>
+<body>
+
+	<nav class="navbar navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Inicio - Udemy</a>
+		<div id="user-data-profile">
+			<span class="badge badge-light mr-3" id="user-saldo"></span>
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary dropdown-toggle"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span id="ajustes">Ajustes </span>
+				</button>
+				<div class="dropdown-menu" id="main-menu">
+					<a id="mi-perfil-btn" class="dropdown-item">Mi perfil</a>
+					<a id="salir-btn" class="dropdown-item" href="index.html">Salir</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<main class="p-4 d-flex justify-content-center">
+		<table class="table">
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Título</th>
+					<th scope="col" id="ordenar-genero" data-toogle="tooltip" data-placement="top" title="Ordenar por género">Genero<span class="fas fa-sort" id="icono-ordenar"></span></th>
+					<th scope="col">Autor</th>
+					<th scope="col">Copias disponibles</th>
+					<th scope="col">Novedad</th>
+					<th scope="col">Precio</th>
+					<th scope="col">Reservar</th>
+				</tr>
+			</thead>
+			<tbody id="libros-tbody">
+			
+			</tbody>
+		</table>
+	</main>
+
+</body>
+</html>

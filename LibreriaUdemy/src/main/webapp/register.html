@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+<link href="css/index.css" rel="stylesheet">
+<title>Registro - Librería Udemy</title>
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-dark">
+		<a class="navbar-brand" href="index.html">Crear cuenta - Udemy</a>
+	</nav>
+	<main class="p-4 d-flex justify-content-center">
+		<div class="card sizeDiv">
+			<div class="card-body">
+				<form id="form-register" class="pb-4">
+					<div class="form-group">
+						<label for="input-username">Nombre de usuario</label>
+						<input type="text" class="form-control" id="input-username" placeholder="Nombre de usuario" required>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="input-contrasena">Contraseña</label>
+							<input type="password" class="form-control" id="input-contrasena" placeholder="Contraseña" required>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="input-contrasena-repeat">Repetir contraseña</label>
+							<input type="password" class="form-control" id="input-contrasena-repeat" placeholder="Repetir contraseña" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="input-nombre">Nombre</label>
+						<input type="text" class="form-control" id="input-nombre" placeholder="Nombre" required>
+					</div>
+					<div class="form-group">
+						<label for="input-apellidos">Apellidos</label>
+						<input type="text" class="form-control" id="input-apellidos" placeholder="Apellidos" required>
+					</div>
+					<div class="form-group">
+						<label for="input-email">Email</label>
+						<input type="text" class="form-control" id="input-email" placeholder="Email" required>
+					</div>
+					<div class="form-group">
+						<label for="input-saldo">Saldo</label>
+						<input type="text" class="form-control" id="input-saldo" placeholder="0" min="0" max="10000" value="0" required>
+					</div>
+					<div class="form-group">
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input" id="input-premium">
+							<label class="form-check-label" for="input-premium">Premium</label>
+						</div>
+					</div>
+					<input type="submit" class="btn btn-primary" id="register-btn" value="Registrar usuario" />
+				</form>
+				<div id="register-error" class="alert alert-danger d-none" role="alert"></div>
+				<a href="index.html">¿Ya tienes cuenta? Iniciar sesión</a>
+			</div>
+		</div> 
+	</main>
+</body>
+</html>
